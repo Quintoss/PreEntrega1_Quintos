@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Emiliano Quintos</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      
+      <table id="calculadora">
+        <tr>
+        <td colspan="4"><input type="textfield" id="displayValue" value="0" readonly cols></input></td>
+        </tr>
+        <tr>
+          <td><button id="siete" onclick="getNumber(7)">7</button></td>
+          <td><button id="ocho" onclick="getNumber(8)">8</button></td>
+          <td><button id="nueve " onclick="getNumber(9)">9</button></td>
+          <td><button id="division " onclick="getOperation('/')">/</button></td>
+        </tr>
+        <tr>
+          <td><button id="cuatro" onclick="getNumber(4)">4</button></td>
+          <td><button id="cinco" onclick="getNumber(5)">5</button></td>
+          <td><button id="seis" onclick="getNumber(6)">6</button></td>
+          <td>
+            <button id="multiplicacion" onclick="getOperation('*')">*</button>
+          </td>
+        </tr>
+        <tr>
+          <td><button id="uno" onclick="getNumber(1)">1</button></td>
+          <td><button id="dos" onclick="getNumber(2)">2</button></td>
+          <td><button id="tres" onclick="getNumber(3)">3</button></td>
+          <td><button id="resta" onclick="getOperation('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button id="cero" onclick="getNumber(0)">0</button></td>
+          <td><button id="restaurar" onclick="getOperation('C')">C</button></td>
+          <td><button id="igual" onclick="getOperation('=')">=</button></td>
+          <td><button id="suma" onclick="getOperation('+')">+</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
